@@ -5,9 +5,12 @@ import ProjectImage from '../ProjectImage';
 import ProjectIcons from '../ProjectIcons';
 import { IconContext } from 'react-icons';
 import data from '../../data.json';
-// import winehubImg from '../../assets/winehub.png';
-// import dbdashImg from '../../assets/dbdash.png';
-// import googlebooksImg from '../../assets/googlebooks.png';
+import dbdashImg from '../../assets/dbdash.png';
+import googlebooksImg from '../../assets/googlebooks.png';
+import winehubImg from '../../assets/winehub.png'
+// const winehubImg = require('../../assets/winehub.png');
+// const dbdashImg = require('../../assets/dbdash.png');
+// const googlebooksImg = require('../../assets/googlebooks.png');
 
 const ProjectGroup: React.FC = () => {
   const [projectIndex, setProjectIndex] = useState<number>(1);
@@ -26,13 +29,13 @@ const ProjectGroup: React.FC = () => {
         </div>
         <div className="project-images">
           <div onClick={() => imageClickHandler(0)}>
-            <ProjectImage image={'http://placehold.it/300x300'}/>
+            <ProjectImage image={dbdashImg}/>
           </div>
           <div onClick={() => imageClickHandler(1)}>
-            <ProjectImage image={'http://placehold.it/300x300'}/>
+            <ProjectImage image={googlebooksImg}/>
           </div>
           <div onClick={() => imageClickHandler(2)}>
-            <ProjectImage image={'http://placehold.it/300x300'}/>
+            <ProjectImage image={winehubImg}/>
           </div>
         </div>
       </div>
