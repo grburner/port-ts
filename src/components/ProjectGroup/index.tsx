@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import './style.css';
 import '../../global.css';
 import ProjectImage from '../ProjectImage';
@@ -9,7 +9,11 @@ import dbdashImg from '../../assets/dbdash.png';
 import googlebooksImg from '../../assets/googlebooks.png';
 import winehubImg from '../../assets/winehub.png'
 
-const ProjectGroup: React.FC = () => {
+interface ProjectGroupProps {
+  winwidth: number
+}
+
+const ProjectGroup: React.FC<ProjectGroupProps> = props => {
   const [projectIndex, setProjectIndex] = useState<number>(1);
 
   const imageClickHandler = (imageIndex: number) => {
@@ -19,6 +23,7 @@ const ProjectGroup: React.FC = () => {
   return (
     <div className={'project-container'}>
       <div></div>
+      {/* <h1>{props.winwidth}</h1> */}
       <div>
         <div className={'project-header'}>
           <h3>{'Projects'}</h3>
