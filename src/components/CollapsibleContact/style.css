@@ -1,0 +1,8 @@
+* {
+    box-sizing: border-box;
+}
+
+ul {
+    display: grid;
+    grid-template-columns: 3fr repeat(3, 1fr);
+}

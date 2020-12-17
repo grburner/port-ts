@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.hero-background {
+    color: #36394f;
+    background-color: #f0fefd;
+}
+
+.hero-container {
+    padding: 5rem 5rem 5rem 10rem;
+}
+
+.my-hero-desc {
+    font-size: 3rem;
+}

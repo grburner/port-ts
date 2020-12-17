@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+}
+
+.nav-wrapper {
+  width: 100%;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.navbar {
+  background-color: #f0fefd;
+  display: grid;
+  grid-template-columns: 7fr 3fr;
+  align-items: center;
+  padding: 2rem 5rem 0 0; 
+}
+
+ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+}
+
+li {
+    transition: color 0.3s ease-out;
+    text-align: center;
+    font-weight: 1000;
+}
+
+.navbar-item {
+  font-weight: 1000;
+}
+
+.navbar-item:hover {
+  color: #fe775e;
+}

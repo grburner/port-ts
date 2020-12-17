@@ -1,0 +1,34 @@
+.project-container {
+    padding-top: 3rem;
+    background-color: #f0fefd;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 2fr 2fr;
+}
+
+.project-header {
+    text-align: right;
+}
+
+.project-sub {
+    color: #fe775e;
+    margin-bottom: 4rem;
+}
+
+.project-images {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(3, auto);
+    margin-bottom: 3rem;
+    justify-items: center;
+}
+
+.desc-container {
+    background-color: #ffffff;
+    padding: 2rem;
+    line-height: 175%;
+}
+
+.desc-section {
+    margin: 2rem 0 1rem 0;
+}

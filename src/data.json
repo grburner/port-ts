@@ -1,0 +1,22 @@
+{
+    "projects": [
+        {
+            "title": "Dibruno Retailer Dash",
+            "description": "This project is Wine Store Management application. Wine 'A' Lot Management System application helps to keep track the inventory and sales information. This Application is a simple reporting dashboard to quickly visualize historical sales data and make data driven decisions. Users can easily find the Slow or fast movement of their products also Slaes Margin, profit and loss in their business. In addition to the technologies listed below we leveraged Sequelize, AMCharts and an MVC structure to manage our app.",
+            "tech": ["js", "node", "mysql", "html", "github", "css"],
+            "image": "dbdash.png"
+        },
+        {
+            "title": "React Google Books Search",
+            "description": "This Google Books Search uses the Google Books API to power a full stack MERN application. Users can easily search for books, see all relevant information, and add and remove books from their reading list",
+            "tech": ["react", "html", "github", "bootstrap", "mongo"],
+            "image": "googlebooks.png"
+        },
+        {
+            "title": "WineHub",
+            "description": "MERN eCommerce solution for small wine retailers. The application allows retailers to upload / manage product inventory and consumers to search, filter and purchase from a marketplace to find their perfect wine. There is both a consumer and retailer portal, connected to a common inventory database as well as a built from scratch shopping cart component. In addition to the technologies listed below we used a Redux like structure with Context, ESLint, Passport, Morgan, and Cloudinary Media Hosting.",
+            "tech": ["js", "node", "react", "mongo", "github", "css", "html"],
+            "image": "winehub.png"
+        }
+    ]
+}

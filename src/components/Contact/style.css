@@ -1,0 +1,28 @@
+.footer {
+    background-color: #f0fefd;
+    display: grid;
+    height: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.contact-icon-group {
+    margin: 1.5rem;
+    align-self: center;
+    justify-self: center;
+}
+
+.icon {
+    color: #37394e;
+}
+
+.icon:hover {
+    color: #fe775e;
+}
+
+a:visited {
+    color: #37394e;
+}
+
+.contact-icon-group > * {
+    margin-right: 2rem;
+}
