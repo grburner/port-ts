@@ -21,7 +21,6 @@ const ProjectGroup: React.FC = () => {
       <div></div>
       <div>
         <div className={'project-header'}>
-          <h1>{'hello'}</h1>
           <h3>{'Projects'}</h3>
           <p className={'project-sub'}>{'from bootcamp, freelance, and personal projects'}</p>
         </div>
