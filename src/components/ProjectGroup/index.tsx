@@ -8,9 +8,6 @@ import data from '../../data.json';
 import dbdashImg from '../../assets/dbdash.png';
 import googlebooksImg from '../../assets/googlebooks.png';
 import winehubImg from '../../assets/winehub.png'
-// const winehubImg = require('../../assets/winehub.png');
-// const dbdashImg = require('../../assets/dbdash.png');
-// const googlebooksImg = require('../../assets/googlebooks.png');
 
 const ProjectGroup: React.FC = () => {
   const [projectIndex, setProjectIndex] = useState<number>(1);
@@ -24,6 +21,7 @@ const ProjectGroup: React.FC = () => {
       <div></div>
       <div>
         <div className={'project-header'}>
+          <h1>{'hello'}</h1>
           <h3>{'Projects'}</h3>
           <p className={'project-sub'}>{'from bootcamp, freelance, and personal projects'}</p>
         </div>
