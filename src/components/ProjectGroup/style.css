@@ -15,18 +15,34 @@
     margin-bottom: 4rem;
 }
 
-.project-images {
+.project-images1 {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(1, auto);
+    margin-bottom: 20px;
+    justify-items: center;
+}
+
+.project-images2 {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(2, auto);
+    margin-bottom: 20px;
+    justify-items: center;
+}
+
+.project-images3 {
     display: grid;
     grid-gap: 1rem;
     grid-template-columns: repeat(3, auto);
-    margin-bottom: 3rem;
+    margin-bottom: 20px;
     justify-items: center;
 }
 
 .desc-container {
     background-color: #ffffff;
     padding: 2rem;
-    line-height: 175%;
+    /* line-height: 175%; */
 }
 
 .desc-section {

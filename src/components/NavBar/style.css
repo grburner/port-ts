@@ -13,21 +13,26 @@
 .navbar {
   background-color: #f0fefd;
   display: grid;
-  grid-template-columns: 7fr 3fr;
+  grid-template-columns: 6fr 2fr;
   align-items: center;
-  padding: 2rem 5rem 0 0; 
+  padding: 2rem 5rem 0 0;
 }
 
 ul {
   list-style: none;
   display: grid;
-  grid-template-columns: repeat(4,1fr);
+  grid-template-columns: repeat(4, 1fr);
 }
 
 li {
-    transition: color 0.3s ease-out;
-    text-align: center;
-    font-weight: 1000;
+  transition: color 0.3s ease-out;
+  text-align: center;
+  font-weight: 1000;
+  margin: 0 1rem;
+}
+
+a {
+  text-decoration: none;
 }
 
 .navbar-item {
