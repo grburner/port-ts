@@ -15,21 +15,10 @@ interface ProjectGroupProps {
 
 const ProjectGroup: React.FC<ProjectGroupProps> = (props) => {
   const [projectIndex, setProjectIndex] = useState<number>(1);
-  const [amountOfPics, setAmountOfPics] = useState<string>('3')
 
   const imageClickHandler = (imageIndex: number) => {
     setProjectIndex(imageIndex);
   };
-
-  const setImageClass = (width: number) => {
-    if (width > 1300) {setAmountOfPics('3')}
-    else if (width < 1300 && width > 700) {setAmountOfPics('2')}
-    else if (width < 700) {setAmountOfPics('1')}
-  }
-
-  useEffect(() => {
-    setImageClass(props.winwidth)
-  }, [props.winwidth])
 
   return (
     <div className={"project-container"}>
@@ -41,7 +30,7 @@ const ProjectGroup: React.FC<ProjectGroupProps> = (props) => {
             {"from bootcamp, freelance, and personal projects"}
           </p>
         </div>
-        <div className={`project-images${amountOfPics}`}>
+        <div className={`project-images`}>
           <div onClick={() => imageClickHandler(0)}>
             <ProjectImage image={dbdashImg} />
           </div>
