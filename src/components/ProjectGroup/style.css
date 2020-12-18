@@ -24,7 +24,6 @@
 .desc-container {
     background-color: #ffffff;
     padding: 2rem;
-    /* line-height: 175%; */
 }
 
 .desc-section {
@@ -48,15 +47,3 @@
         grid-template-columns: repeat(3, auto);
     }
 }
-
-/* @media screen and (max-width: 1300px) {
-    .project-images {
-        grid-template-columns: repeat(2, auto);
-    }
-}
-
-@media screen and (min-width: 1301px) {
-    .project-images {
-        grid-template-columns: repeat(3, auto);
-    }
-} */
