@@ -1,6 +1,5 @@
 import React from "react";
 import "./style.css";
-// import CollapsibleContent from '../CollapsibleContact';
 
 const NavBar: React.FC = () => {
 
@@ -9,8 +8,6 @@ const NavBar: React.FC = () => {
       <nav className={'navbar'}>
         <div/>
         <ul>
-          {/* <li><p className={'navbar-item'}>ABOUT</p></li>
-          <li><p className={'navbar-item'}>PROJECTS</p></li> */}
           <li>
             <a href={'mailto:grburner@gmail.com'}>
               <p className={'navbar-item'}>CONTACT</p>
@@ -23,7 +20,6 @@ const NavBar: React.FC = () => {
           </li>
         </ul>
       </nav>
-      {/* <CollapsibleContent /> */}
     </div>
   );
 };

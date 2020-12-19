@@ -3,16 +3,17 @@
     display: grid;
     height: auto;
     grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
 }
 
 .contact-icon-group {
     margin: 1.5rem;
-    align-self: center;
-    justify-self: center;
+    align-items: center;
 }
 
 .icon {
     color: #37394e;
+    justify-self: center;
 }
 
 .icon:hover {

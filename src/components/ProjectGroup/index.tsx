@@ -1,13 +1,11 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import "./style.css";
 import "../../global.css";
 import ProjectImage from "../ProjectImage";
-import ProjectIcons from "../ProjectIcons";
-import { IconContext } from "react-icons";
-import data from "../../data.json";
 import dbdashImg from "../../assets/dbdash.png";
 import googlebooksImg from "../../assets/googlebooks.png";
 import winehubImg from "../../assets/winehub.png";
+import ProjectDesc from '../ProjectDesc';
 
 interface ProjectGroupProps {
   winwidth: number;
@@ -52,16 +50,7 @@ const ProjectGroup: React.FC<ProjectGroupProps> = (props) => {
       </div>
       <div></div>
       <div></div>
-      <div>
-        <div className={"desc-container"}>
-          <h4 className={"title"}>{data.projects[projectIndex].title}</h4>
-          <h5 className={"desc-section"}>{"Description: "}</h5>
-          <p>{data.projects[projectIndex].description}</p>
-          <IconContext.Provider value={{ color: "#36394f", size: "3.5rem" }}>
-            <ProjectIcons techs={data.projects[projectIndex].tech} />
-          </IconContext.Provider>
-        </div>
-      </div>
+        <ProjectDesc projectIndex={projectIndex} />
       <div></div>
     </div>
   );
