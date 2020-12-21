@@ -1,7 +1,6 @@
 import React from "react";
 import "../../global.css";
 import "./style.css";
-import ProjectIcons from "../ProjectIcons";
 import data from "../../data.json";
 import { AiFillGithub } from "react-icons/ai";
 import { BsBoxArrowUpRight } from "react-icons/bs";

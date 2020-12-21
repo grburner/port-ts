@@ -1,9 +1,10 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useContext } from "react";
 import Hero from './components/Hero';
 import NavBar from './components/NavBar';
 import AboutMe from './components/AboutMe';
 import ProjectGroup from './components/ProjectGroup';
 import Contact from './components/Contact';
+import PortfolioContext from './utils/context';
 
 const App: React.FC = () => {
   const [windowSize, setWindowSize] = useState<number>(window.innerWidth);
@@ -16,13 +17,16 @@ const App: React.FC = () => {
   })
 
   return (
-    <div className="App">
-      <NavBar />
-      <Hero />
-      <AboutMe />
-      <ProjectGroup winwidth={windowSize}/>
-      <Contact />
-    </div>
+    <PortfolioContext.Provider value={{width: windowSize, projectArrangement: [0,1,2]}}>
+      <div className="App">
+        <NavBar />
+        <Hero />
+        <AboutMe />
+        <ProjectGroup />
+        {/* <ProjectGroup winwidth={windowSize}/> */}
+        <Contact />
+      </div>
+    </PortfolioContext.Provider>
   );
 };
 

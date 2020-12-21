@@ -11,19 +11,6 @@
     align-items: center;
 }
 
-.icon {
-    color: #37394e;
-    justify-self: center;
-}
-
-.icon:hover {
-    color: #fe775e;
-}
-
-a:visited {
-    color: #37394e;
-}
-
 .contact-icon-group > * {
     margin-right: 2rem;
 }
