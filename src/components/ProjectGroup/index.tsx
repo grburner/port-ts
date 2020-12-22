@@ -3,6 +3,7 @@ import "./style.css";
 import "../../global.css";
 import ProjectDesc from '../ProjectDesc';
 import ProjectRenderer from '../ProjectRenderer';
+import ArrowBar from '../ArrowBar';
 
 const ProjectGroup: React.FC = () => {
   const [projectIndex, setProjectIndex] = useState<number>(1);
@@ -24,6 +25,7 @@ const ProjectGroup: React.FC = () => {
         <div className={`project-images`}>
           <ProjectRenderer onChange={handleDescChange}/>
         </div>
+        <ArrowBar />
       </div>
       <div></div>
       <div></div>

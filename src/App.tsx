@@ -23,7 +23,6 @@ const App: React.FC = () => {
         <Hero />
         <AboutMe />
         <ProjectGroup />
-        {/* <ProjectGroup winwidth={windowSize}/> */}
         <Contact />
       </div>
     </PortfolioContext.Provider>
