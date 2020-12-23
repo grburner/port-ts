@@ -8,6 +8,13 @@ import PortfolioContext from './utils/context';
 
 const App: React.FC = () => {
   const [windowSize, setWindowSize] = useState<number>(window.innerWidth);
+  const [portfolioState, setPortfolioState] = useState({
+    width: windowSize,
+    projectArrangement: [0,1,2],
+    rearrange: (projectArrangement: number[]) => {
+      setPortfolioState({...portfolioState, projectArrangement})
+    },
+  })
 
   useEffect(() => {
     const handleResize = () => {
@@ -17,7 +24,7 @@ const App: React.FC = () => {
   })
 
   return (
-    <PortfolioContext.Provider value={{width: windowSize, projectArrangement: [0,1,2]}}>
+    <PortfolioContext.Provider value={portfolioState}>
       <div className="App">
         <NavBar />
         <Hero />

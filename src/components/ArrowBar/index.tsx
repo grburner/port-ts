@@ -5,11 +5,23 @@ import { FaAngleDoubleLeft, FaAngleDoubleRight } from 'react-icons/fa';
 import { GoPrimitiveDot } from 'react-icons/go';
 
 const ArrowBar: React.FC = () => {
-    const { projectArrangement } = useContext(PortfoioContext)
+    const context = useContext(PortfoioContext)
+
+    const imageRearranger = (direction: string) => {
+        let newArray: any = [...context.projectArrangement]
+        console.log(newArray)
+        if (direction === 'forward') {
+            newArray.unshift(newArray.pop())
+            return newArray
+        } else if (direction === 'backward') {
+            newArray.push(newArray.shift())
+            return newArray
+        }
+    }
 
     const dotRenderer = () => {
         return (<div>
-            {projectArrangement.map((project, index) => (
+            {context.projectArrangement.map((project, index) => (
                 <div className={'dot'}><GoPrimitiveDot /></div>
             ))}
             </div>);
@@ -18,9 +30,9 @@ const ArrowBar: React.FC = () => {
     return (
         <div className={'arrow-container'}>
             <div className={'icon-container'}>
-                <FaAngleDoubleLeft size={30} color={'#37394e'} className={'arrows'}/>
+                <FaAngleDoubleLeft size={30} color={'#37394e'} className={'arrows'} onClick={() => context.rearrange(imageRearranger('forward'))}/>
                 {dotRenderer()}
-                <FaAngleDoubleRight size={30} color={'#37394e'} className={'arrows'}/>
+                <FaAngleDoubleRight size={30} color={'#37394e'} className={'arrows'} onClick={() => context.rearrange(imageRearranger('backward'))}/>
             </div>
         </div>
     )
