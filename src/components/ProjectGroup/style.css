@@ -16,7 +16,6 @@
 
 .project-images {
     display: grid;
-    grid-gap: 1rem;
     margin-bottom: 20px;
     justify-items: center;
 }
