@@ -20,7 +20,7 @@ const App: React.FC = () => {
       setPortfolioState({...portfolioState, width: window.innerWidth})
     }
     window.addEventListener('resize', handleResize)
-  })
+  }, [])
 
   return (
     <PortfolioContext.Provider value={portfolioState}>
