@@ -31,6 +31,14 @@
             "image": 3,
             "git": "https://github.com/grburner/week6_hw",
             "link": "https://grburner.github.io/LPS-WeatherApp/"
+        },
+        {
+            "title": "Student Directory",
+            "description": "The student directory was one of our first React mini projects for the Penn Bootcamp. It features sortable columns (on click) and the ability to search by student name.",
+            "tech": ["js", "react", "github", "css", "html"],
+            "image": 4,
+            "git": "https://github.com/grburner/LPS-StudentDirectory",
+            "link": "https://gburnerstudentdirectory.herokuapp.com/"
         }
 
     ]

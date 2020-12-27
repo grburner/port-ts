@@ -4,6 +4,7 @@ import dbdashImg from "../../assets/dbdash.png";
 import googlebooksImg from "../../assets/googlebooks.png";
 import winehubImg from "../../assets/winehub.png";
 import weatherDashImg from '../../assets/weatherDash.png'
+import studentDirectory from '../../assets/studentDirectory.png'
 
 const ProjectImage: React.FC<{image: number, active: string}> = (props) => {
 
@@ -17,6 +18,8 @@ const ProjectImage: React.FC<{image: number, active: string}> = (props) => {
                 return winehubImg
             case 3:
                 return weatherDashImg
+            case 4:
+                return studentDirectory
             default:
                 return dbdashImg
         }

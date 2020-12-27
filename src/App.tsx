@@ -9,7 +9,7 @@ import PortfolioContext from './utils/context';
 const App: React.FC = () => {
   const [portfolioState, setPortfolioState] = useState({
     width: window.innerWidth,
-    projectArrangement: [0,1,2,3],
+    projectArrangement: [0,1,2,3,4],
     rearrange: (projectArrangement: number[]) => {
       setPortfolioState({...portfolioState, width: window.innerWidth, projectArrangement: projectArrangement})
     },
