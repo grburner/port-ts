@@ -22,7 +22,7 @@ const ArrowBar: React.FC = () => {
     const dotRenderer = () => {
         return (<div>
             {context.projectArrangement.map((project, index) => (
-                <div className={'dot'}><GoPrimitiveDot /></div>
+                <div className={(context.projectArrangement.slice(0,3)).includes(index)? 'dot active' : 'dot'}><GoPrimitiveDot /></div>
             ))}
             </div>);
     }

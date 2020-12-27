@@ -23,6 +23,15 @@
             "image": 2,
             "git": "https://github.com/grburner/project-3",
             "link": "https://vast-river-22849.herokuapp.com/"
+        },
+        {
+            "title": "WeatherDash",
+            "description": "This is a simple weather app using JQuery that connects to the openweathermap API. It shows the search history, the next 5 days forcast, and the current weather for a given location.",
+            "tech": ["js", "jquery", "github", "css", "html"],
+            "image": 3,
+            "git": "https://github.com/grburner/week6_hw",
+            "link": "https://grburner.github.io/LPS-WeatherApp/"
         }
+
     ]
 }

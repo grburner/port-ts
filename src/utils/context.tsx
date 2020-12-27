@@ -8,7 +8,7 @@ interface PortfolioContext {
 
 const PortfolioContext = React.createContext({
     width: 0,
-    projectArrangement: [0,1,2],
+    projectArrangement: [0,1,2,3],
     rearrange: (projectArrangement: number[]) => {},
 });
 

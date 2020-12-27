@@ -20,3 +20,7 @@
     display: inline-block;
     color: #37394e;
 }
+.active {
+    display: inline-block;
+    color: #fe785e;
+}

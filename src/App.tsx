@@ -10,7 +10,7 @@ const App: React.FC = () => {
   const [windowSize, setWindowSize] = useState<number>(window.innerWidth);
   const [portfolioState, setPortfolioState] = useState({
     width: windowSize,
-    projectArrangement: [0,1,2],
+    projectArrangement: [0,1,2,3],
     rearrange: (projectArrangement: number[]) => {
       setPortfolioState({...portfolioState, projectArrangement})
     },

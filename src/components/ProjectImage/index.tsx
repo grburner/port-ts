@@ -3,6 +3,7 @@ import './style.css';
 import dbdashImg from "../../assets/dbdash.png";
 import googlebooksImg from "../../assets/googlebooks.png";
 import winehubImg from "../../assets/winehub.png";
+import weatherDashImg from '../../assets/weatherDash.png'
 
 const ProjectImage: React.FC<{image: number}> = (props) => {
 
@@ -14,6 +15,8 @@ const ProjectImage: React.FC<{image: number}> = (props) => {
                 return googlebooksImg
             case 2: 
                 return winehubImg
+            case 3:
+                return weatherDashImg
             default:
                 return dbdashImg
         }
