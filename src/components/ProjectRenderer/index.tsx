@@ -12,20 +12,20 @@ const ProjectRenderer: React.FC<Props> = (props) => {
 
   return (
     <div className={`project-images`}>
-      <div onClick={() => props.onChange(0)}>
+      <div onClick={() => props.onChange(projectArrangement[0])}>
         <ProjectImage image={data.projects[projectArrangement[0]].image} />
       </div>
       {width < 700 ? (
         ""
       ) : (
-        <div onClick={() => props.onChange(1)}>
+        <div onClick={() => props.onChange(projectArrangement[1])}>
           <ProjectImage image={data.projects[projectArrangement[1]].image} />
         </div>
       )}
       {width < 1300 ? (
         ""
       ) : (
-        <div onClick={() => props.onChange(2)}>
+        <div onClick={() => props.onChange(projectArrangement[2])}>
           <ProjectImage image={data.projects[projectArrangement[2]].image} />
         </div>
       )}
