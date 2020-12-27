@@ -23,7 +23,7 @@ const ProjectGroup: React.FC = () => {
           </p>
         </div>
         <div className={`project-images`}>
-          <ProjectRenderer onChange={handleDescChange}/>
+          <ProjectRenderer projectIndex={projectIndex} onChange={handleDescChange}/>
         </div>
         <ArrowBar />
       </div>

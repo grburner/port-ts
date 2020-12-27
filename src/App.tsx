@@ -7,18 +7,17 @@ import Contact from './components/Contact';
 import PortfolioContext from './utils/context';
 
 const App: React.FC = () => {
-  const [windowSize, setWindowSize] = useState<number>(window.innerWidth);
   const [portfolioState, setPortfolioState] = useState({
-    width: windowSize,
+    width: window.innerWidth,
     projectArrangement: [0,1,2,3],
     rearrange: (projectArrangement: number[]) => {
-      setPortfolioState({...portfolioState, projectArrangement})
+      setPortfolioState({...portfolioState, width: window.innerWidth, projectArrangement: projectArrangement})
     },
   })
 
   useEffect(() => {
     const handleResize = () => {
-      setWindowSize(window.innerWidth)
+      setPortfolioState({...portfolioState, width: window.innerWidth})
     }
     window.addEventListener('resize', handleResize)
   })

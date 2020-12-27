@@ -5,7 +5,7 @@ import googlebooksImg from "../../assets/googlebooks.png";
 import winehubImg from "../../assets/winehub.png";
 import weatherDashImg from '../../assets/weatherDash.png'
 
-const ProjectImage: React.FC<{image: number}> = (props) => {
+const ProjectImage: React.FC<{image: number, active: string}> = (props) => {
 
     const imgPick = (image:number) => {
         switch (image) {
@@ -24,7 +24,7 @@ const ProjectImage: React.FC<{image: number}> = (props) => {
 
     return (
     <div>
-        <img className={'still-img'} src={imgPick(props.image)} alt='wine hub'/>
+        <img className={props.active === 'true' ? 'active still-img' : 'still-img'} src={imgPick(props.image)} alt='wine hub'/>
     </div>
     );
 };

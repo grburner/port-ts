@@ -2,6 +2,11 @@
     margin: 1rem 1.5rem 0 0;
 }
 
+.active {
+  border-color: #fe785e;
+  border-width: 5px;
+}
+
 .still-img {
   float: left;
   width: 300px;
