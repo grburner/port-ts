@@ -14,7 +14,7 @@ const NavBar: React.FC = () => {
             </a>
           </li>
           <li>
-            <a href={'https://drive.google.com/file/d/19JZx7slGKI5ei0TyB5ka4wTPf9z66TpP/view?usp=sharing'} className={'navbar-item'} target={"_blank"} rel={"noopener norefferrer"} download>
+            <a href={'https://drive.google.com/file/d/1nkBTtPiX5gEIJ_RTHEk7297H7Yy3ygJs/view?usp=sharing'} className={'navbar-item'} target={"_blank"} rel={"noopener norefferrer"} download>
               <p className={'navbar-item'}>RESUME</p>
             </a>
           </li>
