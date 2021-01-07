@@ -5,6 +5,7 @@ import AboutMe from './components/AboutMe';
 import ProjectGroup from './components/ProjectGroup';
 import Contact from './components/Contact';
 import PortfolioContext from './utils/context';
+import ReviewGroup from './components/ReviewGroup';
 
 const App: React.FC = () => {
   const [portfolioState, setPortfolioState] = useState({

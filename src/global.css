@@ -54,3 +54,8 @@ a:visited {
 .icon:hover {
   color: #fe775e;
 }
+
+.sub-text {
+  color: #fe775e;
+  margin-bottom: 4rem;
+}
