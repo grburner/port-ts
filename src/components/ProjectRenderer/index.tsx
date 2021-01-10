@@ -13,7 +13,6 @@ const ProjectRenderer: React.FC<Props> = (props) => {
 
   return (
     <div className={`project-images`}>
-      <div>{`${projectArrangement}`}</div>
       <div onClick={() => props.onChange(projectArrangement[0])}>
         <ProjectImage active={props.projectIndex === 0 ? 'true' : 'false'} image={data.projects[projectArrangement[0]].image} />
       </div>
