@@ -4,7 +4,11 @@ import PortfoioContext from "../../utils/context";
 import { FaAngleDoubleLeft, FaAngleDoubleRight } from 'react-icons/fa';
 import { GoPrimitiveDot } from 'react-icons/go';
 
-const ArrowBar: React.FC = () => {
+interface Props {
+    onChange: (newValue: number) => void
+}
+
+const ArrowBar: React.FC<Props> = (props) => {
     const context = useContext(PortfoioContext)
     const [imagesInView, setImagesInView] = useState<number>(0)
 
@@ -20,7 +24,6 @@ const ArrowBar: React.FC = () => {
 
     const imageRearranger = (direction: string) => {
         let newArray: any = [...context.projectArrangement]
-        console.log(newArray)
         if (direction === 'forward') {
             newArray.unshift(newArray.pop())
             return newArray
@@ -41,7 +44,9 @@ const ArrowBar: React.FC = () => {
     return (
         <div className={'arrow-container'}>
             <div className={'icon-container'}>
-                <FaAngleDoubleLeft size={30} color={'#37394e'} className={'arrows'} onClick={() => context.rearrange(imageRearranger('forward'))}/>
+                <FaAngleDoubleLeft size={30} color={'#37394e'} className={'arrows'} onClick={() => 
+                    context.rearrange(imageRearranger('forward'))
+                    }/>
                 {dotRenderer()}
                 <FaAngleDoubleRight size={30} color={'#37394e'} className={'arrows'} onClick={() => context.rearrange(imageRearranger('backward'))}/>
             </div>

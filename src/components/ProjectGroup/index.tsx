@@ -5,13 +5,20 @@ import ProjectDesc from '../ProjectDesc';
 import ProjectRenderer from '../ProjectRenderer';
 import ArrowBar from '../ArrowBar';
 import ReviewGroup from '../ReviewGroup';
+import PortfolioContext from "../../utils/context";
 
 const ProjectGroup: React.FC = () => {
   const [projectIndex, setProjectIndex] = useState<number>(1);
+  const context = useContext(PortfolioContext)
 
   const handleDescChange = (newValue: number) => {
     setProjectIndex(newValue)
   }
+
+  // const imgRearrange = () => {
+  //   setProjectIndex(context.projectArrangement[0])
+  //   console.log('setarrange')
+  // };
 
   return (
     <div className={"project-container"}>
@@ -26,11 +33,11 @@ const ProjectGroup: React.FC = () => {
         <div className={`project-images`}>
           <ProjectRenderer projectIndex={projectIndex} onChange={handleDescChange}/>
         </div>
-        <ArrowBar />
+        <ArrowBar onChange={handleDescChange}/>
       </div>
       <div></div>
       <div></div>
-        <ProjectDesc projectIndex={projectIndex} />
+        <ProjectDesc projectIndex={context.projectArrangement[0]} />
       <div></div>
       <div></div>
       {/* <div>

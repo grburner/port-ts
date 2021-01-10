@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import Review from '../Review';
 import './style.css';
 import "../../global.css";
