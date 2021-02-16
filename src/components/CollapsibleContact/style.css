@@ -2,7 +2,16 @@
     box-sizing: border-box;
 }
 
-ul {
-    display: grid;
-    grid-template-columns: 3fr repeat(3, 1fr);
+#contact-block {
+    /* display: block; */
+    background-color: #f0fefd;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.contact-item {
+    justify-items: end;
+}
+
+.icon {
+    position: relative;
 }

@@ -32,6 +32,7 @@ p {
   font-family: "Roboto Mono", monospace;
   font-size: 1rem;
   color: #36394f;
+  line-height: 175%;
 }
 
 a {

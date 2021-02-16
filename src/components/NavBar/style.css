@@ -13,7 +13,7 @@
 .navbar {
   background-color: #f0fefd;
   display: grid;
-  grid-template-columns: 6fr 2fr;
+  grid-template-columns: 3fr 1fr;
   align-items: center;
   padding: 2rem 5rem 0 0;
 }
@@ -21,7 +21,7 @@
 ul {
   list-style: none;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 li {
@@ -37,4 +37,8 @@ li {
 
 .navbar-item:hover {
   color: #fe775e;
+}
+
+.contact-bar {
+  margin: 1rem 0 0 0;
 }

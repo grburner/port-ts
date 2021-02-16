@@ -1,7 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import "./style.css";
+import CollapsibleContact from '../CollapsibleContact';
 
 const NavBar: React.FC = () => {
+  const [contactView, setContactView] = useState(false);
+
+  const toggleView = () => {
+    console.log('toggleview' + contactView)
+    contactView ? setContactView(false) : setContactView(true)
+  }
 
   return (
     <div className={'nav-wrapper'}>
@@ -9,9 +16,7 @@ const NavBar: React.FC = () => {
         <div/>
         <ul>
           <li>
-            <a href={'mailto:grburner@gmail.com'}>
-              <p className={'navbar-item'}>CONTACT</p>
-            </a>
+            <p onClick={() => {toggleView()}}className={'navbar-item'}>CONTACT</p>
           </li>
           <li>
             <a href={'https://drive.google.com/file/d/1nkBTtPiX5gEIJ_RTHEk7297H7Yy3ygJs/view?usp=sharing'} className={'navbar-item'} target={"_blank"} rel={"noopener norefferrer"} download>
@@ -20,6 +25,7 @@ const NavBar: React.FC = () => {
           </li>
         </ul>
       </nav>
+      { contactView ? <CollapsibleContact /> : '' }
     </div>
   );
 };

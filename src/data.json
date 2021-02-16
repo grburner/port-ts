@@ -2,7 +2,7 @@
     "projects": [
         {
             "title": "Dibruno Retailer Dash",
-            "description": "This project is Wine Store Management application. Wine 'A' Lot Management System application helps to keep track the inventory and sales information. This Application is a simple reporting dashboard to quickly visualize historical sales data and make data driven decisions. Users can easily find the Slow or fast movement of their products also Slaes Margin, profit and loss in their business. In addition to the technologies listed below we leveraged Sequelize, AMCharts and an MVC structure to manage our app.",
+            "description": "This project is Wine Store Management application. Wine 'A' Lot Management System application helps to keep track the inventory and sales information. This Application is a simple reporting dashboard to quickly visualize historical sales data and make data driven decisions. Users can easily find the Slow or fast movement of their products also Sales Margin, profit and loss in their business. In addition to the technologies listed below we leveraged Sequelize, AMCharts and an MVC structure to manage our app.",
             "tech": ["js", "node", "mysql", "html", "github", "css"],
             "image": 0,
             "git": "https://github.com/ram-sah/Project-2",
