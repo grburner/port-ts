@@ -19,7 +19,7 @@ const NavBar: React.FC = () => {
             <p onClick={() => {toggleView()}}className={'navbar-item'}>CONTACT</p>
           </li>
           <li>
-            <a href={'https://drive.google.com/file/d/1nkBTtPiX5gEIJ_RTHEk7297H7Yy3ygJs/view?usp=sharing'} className={'navbar-item'} target={"_blank"} rel={"noopener norefferrer"} download>
+            <a href={'https://drive.google.com/file/d/1cAVBG0_xzey5yQYfny85bB3HThQJ-gcG/view?usp=sharing'} className={'navbar-item'} target={"_blank"} rel={"noopener norefferrer"} download>
               <p className={'navbar-item'}>RESUME</p>
             </a>
           </li>
