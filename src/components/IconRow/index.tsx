@@ -16,21 +16,21 @@ import { BsBootstrapFill, BsFillDropletFill } from 'react-icons/bs';
 
 const IconRow: React.FC = () => {
   return (
-    <div className={'icon-group'}>
-      <DiJsBadge />
-      <DiReact />
-      <DiNodejsSmall />
-      <FaShopify />
-      <BsFillDropletFill />
-      <DiMongodb />
-      <SiMysql />
-      <DiCss3 />
-      <DiHtml5 />
-      <SiTypescript />
-      <AiFillGithub />
-      <DiJqueryLogo />
-      <BsBootstrapFill />
-    </div>
+    <figure className={'icon-group'}>
+      <div><DiJsBadge /></div>
+      <div><DiReact /></div>
+      <div><DiNodejsSmall /></div>
+      <div><FaShopify /></div>
+      <div><BsFillDropletFill /></div>
+      <div><DiMongodb /></div>
+      <div><SiMysql /></div>
+      <div><DiCss3 /></div>
+      <div><DiHtml5 /></div>
+      <div><SiTypescript /></div>
+      <div><AiFillGithub /></div>
+      <div><DiJqueryLogo /></div>
+      {/* <div><BsBootstrapFill /></div> */}
+    </figure>
   );
 };
 

@@ -3,13 +3,17 @@
 }
 
 #contact-block {
-    /* display: block; */
-    background-color: #f0fefd;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
+    flex-direction: column;
 }
 
 .contact-item {
     justify-items: end;
+    color: #36394f;
+}
+
+.contact-item a {
+    color: #36394f;
 }
 
 .icon {

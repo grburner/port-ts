@@ -1,5 +1,5 @@
 .icon-group > * {
-    margin: 1rem 1.5rem 0 0;
+    margin: 1rem
 }
 
 .active {
@@ -13,7 +13,14 @@
   height: 100%;
   border-radius: 10px;
   margin: 0 1rem;
+  transform: translateX(-2%);
 }
+
+/* @media all and (max-width: 980px) {
+  .still-img {
+    transform: translateX(-8%);
+  }
+} */
 
 .fade-in-image {
   animation: fadeIn 1s;

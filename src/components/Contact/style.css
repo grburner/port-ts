@@ -1,17 +1,9 @@
 .footer {
-    background-color: #f0fefd;
-    display: grid;
-    height: auto;
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-items: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
 }
 
 .contact-icon-group {
-    margin: 1.5rem;
-    align-items: center;
+  margin: 1.5rem;
+  align-items: center;
 }
-
-/* .contact-icon-group > * {
-    margin-right: 2rem;
-} */

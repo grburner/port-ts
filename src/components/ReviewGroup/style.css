@@ -1,8 +1,6 @@
 .review-container {
     padding-top: 3rem;
-    background-color: #f0fefd;
     display: grid;
-    /* grid-template-columns: 1fr 1fr 1fr; */
 }
 
 .review-header {

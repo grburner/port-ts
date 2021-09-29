@@ -1,8 +1,11 @@
 .project-container {
     padding-top: 3rem;
     background-color: #f0fefd;
-    display: grid;
-    grid-template-columns: 10% 80% 10%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
 }
 
 .project-header {

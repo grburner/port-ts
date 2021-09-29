@@ -6,8 +6,7 @@ import { HiOutlineMail } from 'react-icons/hi';
 
 const Contact: React.FC = () => {
     return (
-        <div className={'footer'}>
-            <div></div>
+        <footer className={'footer'}>
             <div className={'contact-icon-group'}>
                 <a href={'https://www.linkedin.com/in/gburner/'} target={'_blank'}>
                     <FaLinkedin size={30} className={'icon'}/>
@@ -19,8 +18,7 @@ const Contact: React.FC = () => {
                     <HiOutlineMail size={30} className={'icon'}/>
                 </a>
             </div>
-            <div />
-        </div>
+        </footer>
     );
 };
 

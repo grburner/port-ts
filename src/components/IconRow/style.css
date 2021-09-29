@@ -1,3 +1,13 @@
 .icon-group > * {
     margin-right: 1.5rem;
 }
+
+.icon-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.icon-group div {
+    width: 50px;
+}

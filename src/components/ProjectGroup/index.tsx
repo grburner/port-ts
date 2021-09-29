@@ -15,14 +15,8 @@ const ProjectGroup: React.FC = () => {
     setProjectIndex(newValue)
   }
 
-  // const imgRearrange = () => {
-  //   setProjectIndex(context.projectArrangement[0])
-  //   console.log('setarrange')
-  // };
-
   return (
-    <div className={"project-container"}>
-      <div></div>
+    <section className={"project-container"}>
       <div>
         <div className={"project-header"}>
           <h3>{"Projects"}</h3>
@@ -30,20 +24,13 @@ const ProjectGroup: React.FC = () => {
             {"from bootcamp, freelance, and personal projects"}
           </p>
         </div>
-        <div className={`project-images`}>
+        <figure className={`project-images`}>
           <ProjectRenderer projectIndex={projectIndex} onChange={handleDescChange}/>
-        </div>
+        </figure>
         <ArrowBar onChange={handleDescChange}/>
       </div>
-      <div></div>
-      <div></div>
         <ProjectDesc projectIndex={context.projectArrangement[0]} />
-      <div></div>
-      <div></div>
-      {/* <div>
-        <ReviewGroup />
-      </div> */}
-    </div>
+    </section>
   );
 };
 
