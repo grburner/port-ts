@@ -5,6 +5,11 @@ import CollapsibleContact from '../CollapsibleContact';
 const NavBar: React.FC = () => {
   const [contactView, setContactView] = useState(false);
 
+  const toggleView = () => {
+    console.log('toggleview' + contactView)
+    contactView ? setContactView(false) : setContactView(true)
+  }
+
   return (
     <nav className={'nav-wrapper'}>
       <div className={'navbar'}>
