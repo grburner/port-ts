@@ -4,26 +4,6 @@ import CollapsibleContact from '../CollapsibleContact';
 
 const NavBar: React.FC = () => {
   const [contactView, setContactView] = useState(false);
-  // const [scrolling, setScrolling] = useState(false);
-
-  // const toggleView = () => {
-  //   console.log('toggleview' + contactView)
-  //   contactView ? setContactView(false) : setContactView(true)
-  // }
-
-  // const highlightNav = () => {
-  //   console.log(window.scrollY)
-  // }
-
-  // useEffect(() => {
-  //   highlightNav();
-  //   window.addEventListener("scroll", highlightNav)
-  //   if (window.scrollY >= 66) {
-  //     setScrolling(true)
-  //   } else {
-  //     setScrolling(false)
-  //   }
-  // }, [scrolling])
 
   return (
     <nav className={'nav-wrapper'}>

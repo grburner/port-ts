@@ -5,6 +5,7 @@
 #contact-block {
     display: flex;
     flex-direction: column;
+    background-color: #f0fefd;
 }
 
 .contact-item {
