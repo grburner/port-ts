@@ -10,17 +10,7 @@ interface Props {
 
 const ArrowBar: React.FC<Props> = (props) => {
     const context = useContext(PortfoioContext)
-    const [imagesInView, setImagesInView] = useState<number>(0)
-
-    useEffect(() => {
-        if (context.width < 700) {
-            setImagesInView(1)
-        } else if (context.width < 1300) {
-            setImagesInView(2)
-        } else {
-            setImagesInView(3)
-        }
-    }, [context.width])
+    const imagesInView = 1
 
     const imageRearranger = (direction: string) => {
         let newArray: any = [...context.projectArrangement]

@@ -1,8 +1,9 @@
 .desc-container {
-    background-color: #ffffff;
-    padding: 2rem;
+  background-color: #ffffff;
+  padding: 2rem;
+  display: flex;
 }
 
 .desc-section {
-    margin: 1rem 0 1rem 0;
+  margin: 1rem 0 1rem 0;
 }

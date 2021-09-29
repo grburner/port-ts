@@ -2,7 +2,7 @@
     padding-top: 3rem;
     background-color: #f0fefd;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 10% 80% 10%;
 }
 
 .project-header {
@@ -13,22 +13,4 @@
     display: grid;
     margin-bottom: 20px;
     justify-items: center;
-}
-
-@media all and (max-width: 700px) {
-    .project-images {
-        grid-template-columns: 1fr;
-    }
-}
-
-@media all and (max-width: 1300px) {
-    .project-images {
-        grid-template-columns: repeat(2, auto);
-    }
-}
-
-@media all and (min-width: 1301px) {
-    .project-images {
-        grid-template-columns: repeat(3, auto);
-    }
 }

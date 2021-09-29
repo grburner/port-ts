@@ -9,7 +9,8 @@ const Icons = {
     'typescript': true,
     'github': true,
     'jquery': true,
-    'bootstrap': true
+    'bootstrap': true,
+    'shopify': true
 }
 
 interface Icons {
@@ -23,7 +24,8 @@ interface Icons {
     'typescript': boolean,
     'github': boolean,
     'jquery': boolean,
-    'bootstrap': boolean
+    'bootstrap': boolean,
+    'shopify': boolean
 }
 
 export default Icons;

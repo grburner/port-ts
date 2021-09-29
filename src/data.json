@@ -1,36 +1,36 @@
 {
     "projects": [
         {
-            "title": "Dibruno Retailer Dash",
-            "description": "This project is Wine Store Management application. Wine 'A' Lot Management System application helps to keep track the inventory and sales information. This Application is a simple reporting dashboard to quickly visualize historical sales data and make data driven decisions. Users can easily find the Slow or fast movement of their products also Sales Margin, profit and loss in their business. In addition to the technologies listed below we leveraged Sequelize, AMCharts and an MVC structure to manage our app.",
-            "tech": ["js", "node", "mysql", "html", "github", "css"],
+            "title": "Worth Home Shopify Theme",
+            "description": "Worth Home needed a complete theme makeover for their unqiue business case: they sell two similar, but un-related products on worthhp.com. The challenge was creating custom home, product, and landing pages to elegantly display both product lines while providing a great UX. We achieved this by toggling content on the homepage, dependant on a user selection and using metafields to determine what content the product pages are populated with.",
+            "tech": ["js", "liquid", "shopify", "css", "html"],
             "image": 0,
-            "git": "https://github.com/ram-sah/Project-2",
-            "link": "https://project-2-group1.herokuapp.com/" 
+            "git": "https://github.com/grburner/worth_home_rewrite",
+            "link": "https://www.worthhp.com/"
         },
         {
-            "title": "React Google Books Search",
-            "description": "This Google Books Search uses the Google Books API to power a full stack MERN application. Users can easily search for books, see all relevant information, and add and remove books from their reading list",
-            "tech": ["react", "html", "github", "bootstrap", "mongo"],
+            "title": "LitJoy Crate - Custom Landing Page",
+            "description": "LitJoy create is a project I was able to work on at Tako. This was a collaboration between 3 developers, designers and the project management team. My main contribution was to create a landing page that was highly customizable based on the needs of that quarter's book release. The template empowers the client to change everything from font, just about every color on the page, still images or video, toggling sections, and more. I also was able to work on the Klaviyo integration as well as components on other pages around the site.",
+            "tech": ["js", "liquid", "shopify", "css", "html", "github"],
             "image": 1,
-            "git": "https://github.com/grburner/LPS-GoogleBooks",
-            "link": "https://googlebooks15.herokuapp.com/"
+            "git": "",
+            "link": "https://litjoycrate.com/pages/cassandra-clare"
         },
         {
             "title": "WineHub",
-            "description": "MERN eCommerce solution for small wine retailers. The application allows retailers to upload / manage product inventory and consumers to search, filter and purchase from a marketplace to find their perfect wine. There is both a consumer and retailer portal, connected to a common inventory database as well as a built from scratch shopping cart component. In addition to the technologies listed below we used a Redux like structure with Context, ESLint, Passport, Morgan, and Cloudinary Media Hosting.",
+            "description": "My capstone project from the UPenn LPS Web Development Bootcamp: WineHub is a marketplace that allows retailers to upload / manage product inventory and consumers to search, filter and purchase from a marketplace to find their perfect wine. There is both a consumer and retailer portal, connected to a common inventory database as well as a built from scratch shopping cart component. In addition to the technologies listed below we used a Redux like structure with Context, ESLint, Passport, Morgan, and Cloudinary Media Hosting. My responsibilities were the backend inventory portal, database work, integrating Stripe and building out the Shopping cart from scratch.",
             "tech": ["js", "node", "react", "mongo", "github", "css", "html"],
             "image": 2,
             "git": "https://github.com/grburner/project-3",
             "link": "https://vast-river-22849.herokuapp.com/"
         },
         {
-            "title": "WeatherDash",
-            "description": "This is a simple weather app using JQuery that connects to the openweathermap API. It shows the search history, the next 5 days forcast, and the current weather for a given location.",
-            "tech": ["js", "jquery", "github", "css", "html"],
+            "title": "Sortly + ShipStation Connection ",
+            "description": "The client needed a solution to be able to connect their inventory management system, Sortly, with their shipping solution, ShipStation. Node was used to build a piece of middleware to pull any changed entries in Sortly and complile the changed product info to be uploaded in Shipstation.",
+            "tech": ["js", "node", "github"],
             "image": 3,
-            "git": "https://github.com/grburner/week6_hw",
-            "link": "https://grburner.github.io/LPS-WeatherApp/"
+            "git": "https://github.com/grburner/shill_sortly_ss_connect",
+            "link": ""
         },
         {
             "title": "Student Directory",
